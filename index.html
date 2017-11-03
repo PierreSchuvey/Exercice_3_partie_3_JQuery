@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-3.2.1.js"></script>
+  <title>Exercice 3</title>
+</head>
+<body>
+  <form>
+    <label>Nombre de cliques : </label>
+    <input type="text" id="number" />
+    <button type="button" name="button" id="choix">Valider choix !</button>
+  </form>
+  <script>
+  $('#choix').click(function(){
+    var goodNumber = 50 ;
+    var choiceNumber = $('#number').val();
+    if(choiceNumber < goodNumber){
+      alert('C\'est plus !');
+    }
+    else{
+      if(choiceNumber > goodNumber){
+        alert('C\'est moins !');
+      }
+      else{
+        alert('Bingo !');
+      }
+    }
+  });
+  </script>
+</body>
+</html>
